@@ -65,7 +65,7 @@ int main()
 
     if (isFull(new))
         printf("Queue is full.\n");
-
+    
     printf("Dequeued element %d\n", dequeue(new));
     printf("Dequeued element %d\n", dequeue(new));
     printf("Dequeued element %d\n", dequeue(new));
