@@ -3,7 +3,7 @@
 void bubble(int arr[], int size)
 {
     int i, temp, swaped = 1, pass;
-    for (pass = 0; pass < size && swaped; pass++) //counting the each pass and checking whether sorted or not
+    for (pass = 0; pass < size-1 && swaped; pass++) //counting the each pass and checking whether sorted or not
     {
         swaped = 0;
         for(i = 0 ; i< size-pass-1 ; i++) 

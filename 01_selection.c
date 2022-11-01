@@ -5,7 +5,7 @@ void selection(int arr[], int size){
     for(int i=0;i<size-1;i++)
     {
         min= i;// find the minimum element index first
-        for(int j=0;j<size;j++){
+        for(int j=i+1;j<size;j++){
             if(arr[j]<arr[min]){
                 min=j;
             }
