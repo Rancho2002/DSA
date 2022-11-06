@@ -7,6 +7,7 @@ struct stackMethods
     int top;
     int * arr;
 };
+
 int isEmpty(struct stackMethods *ptr){
     if(ptr->top==-1)
     return 1;
@@ -19,6 +20,21 @@ int isFull(struct stackMethods *ptr){
     else
     return 0;
 }
+
+void display(struct stackMethods *ptr){
+    printf("Stack Elements: \n");
+    if(!isEmpty(ptr)){
+        printf("--> ");
+        for(int i=ptr->top;i>=0;i--)
+        {
+            printf("%d ",ptr->arr[i]);
+        }
+        printf("\n");
+    }
+    else
+    printf("---> Stack is empty!\n");
+}
+
 void push(struct stackMethods *ptr, int elem){
     if(isFull(ptr)){
         printf("StackOverflow!\n");
@@ -44,23 +60,24 @@ int pop(struct stackMethods *ptr){
     }
 }
 int main(){
-    struct stackMethods *newStack;
-    newStack->size=5;
-    newStack->top=-1;
-    newStack->arr=(int *)malloc(newStack->size*sizeof(int));
+    struct stackMethods *stack;
+    stack->size=5;
+    stack->top=-1;
+    stack->arr=(int *)malloc(stack->size*sizeof(int));
 
-    push(newStack,5);
-    push(newStack,4);
-    push(newStack,7);
-    push(newStack,9);
-    push(newStack,2);
-    push(newStack,10);
-    pop(newStack);
-    pop(newStack);
-    pop(newStack);
-    pop(newStack);
-    pop(newStack);
-    pop(newStack);
-    push(newStack,10);
+    push(stack,3);
+    display(stack);
+    pop(stack);
+    display(stack);
+    push(stack,7);
+    display(stack);
+    push(stack,20);
+    display(stack);
+    push(stack,56);
+    display(stack);
+    pop(stack);
+    display(stack);
+    push(stack,45);
+    display(stack);
     return 0;
 }
