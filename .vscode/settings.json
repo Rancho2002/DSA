@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*html": "html",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "*.tcc": "cpp",
+        "istream": "cpp"
     }
 }
