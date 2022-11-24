@@ -72,8 +72,163 @@ def pattern6(n):
             print(j+1,end="")
         print()
 
-# pattern2(n)
+'''
+4
+1
+21
+321
+4321
+'''
+def pattern7(n):
+
+    for i in range(1,n+1):
+        for j in range(i,0,-1):
+            print(j,end=" ")
+        print()
+
+'''
+4
+AAAA
+BBBB
+CCCC
+DDDD
+'''  
+def pattern8(n):
+    c=65
+    for i in range(n):
+        for j in range(n):
+            print(chr(c),end="")
+        c+=1
+        print()
+
+'''
+4
+ABCD
+ABCD
+ABCD
+ABCD
+'''
+def pattern9(n):
+    for i in range(n):
+        c=65
+        for j in range(n):
+            print(chr(c),end="")
+            c+=1
+        print()
+
+'''
+4
+ABCD
+EFGH
+IJKL
+MNOP
+'''        
+def pattern10(n):
+    c=65
+    for i in range(n):
+        for j in range(n):
+            print(chr(c),end="")
+            c+=1
+        print()
+
+'''
+4
+ABCD
+BCDE
+CDEF
+DEFG
+'''
+def pattern11(n):
+    c=65
+    for i in range(n):
+        for j in range(n):
+            print(chr(c),end="")
+            c+=1
+        print()
+        c=65+i+1
+'''
+3
+A
+BB
+CCC
+'''
+def pattern12(n):
+    c=65
+    for i in range(1,n+1):
+        print(chr(c)*i)
+        c+=1
+
+def pattern13(n):
+    c=65
+    for i in range(1,n+1):
+        for j in range(i):
+            print(chr(c),end="")
+            c+=1
+        print()
+'''
+4
+D
+C D
+B C D
+A B C D
+'''
+def pattern14(n):
+    c=65
+    for i in range(1,n+1):
+        for j in range(i,0,-1):
+            print(chr(c+n-j),end=" ")
+        print()
+'''
+4
+   *
+  **
+ ***
+****
+'''
+def pattern15(n):
+    for i in range(1,n+1):
+        for j in range(n,i,-1):
+            print(" ",end="")
+        for k in range(i):
+            print("*",end="")
+        print()
+
+'''
+4
+****
+***
+**
+*
+'''
+def pattern16(n):
+    for i in range(n):
+        print("*"*(n-i))
+
+
+def pattern17(n):
+    for i in range(n):
+        for j in range(n-1,i,-1):
+            print(" ",end=" ")
+        for k in range(i+1):
+            print(k+1,end=" ")
+        for t in range(i,0,-1):
+            print(t,end=" ")
+        print()
+
+
+# pattern2(num)
 # pattern3(num)
 # pattern4(num)
 # pattern5(num)
-pattern6(num)
+# pattern6(num) 
+# pattern7(num)
+# pattern8(num)
+# pattern9(num)
+# pattern10(num)
+# pattern11(num)
+# pattern12(num)
+# pattern13(num)
+# pattern14(num)
+# pattern15(num)
+# pattern16(num)
+pattern17(num)
