@@ -4,5 +4,6 @@
         "stdio.h": "c",
         "*.tcc": "cpp",
         "istream": "cpp"
-    }
+    },
+    "python.analysis.typeCheckingMode": "basic"
 }
