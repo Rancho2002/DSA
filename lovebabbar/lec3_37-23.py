@@ -203,7 +203,14 @@ def pattern15(n):
 def pattern16(n):
     for i in range(n):
         print("*"*(n-i))
-
+'''
+5
+        1 
+      1 2 1 
+    1 2 3 2 1 
+  1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+'''
 
 def pattern17(n):
     for i in range(n):
