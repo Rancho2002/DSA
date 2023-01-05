@@ -1,3 +1,7 @@
+/*
+! concept to use circular queue: to use the empty unused memory of a queue
+! how to use:  by circular increment i.e (i+1)%size 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
