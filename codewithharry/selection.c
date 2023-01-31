@@ -10,6 +10,7 @@ void selection(int arr[], int size){
                 min=j;
             }
         }
+        // Swap
         temp=arr[min];
         arr[min]=arr[i];
         arr[i]=temp;
