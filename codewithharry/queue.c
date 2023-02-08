@@ -42,6 +42,14 @@ int dequeue(queue *ptr){
     }
 }
 
+void display(queue *ptr){
+    int i=ptr->front+1;
+    while(i!=ptr->rear+1){
+        printf("%d ",ptr->arr[i]); 
+        i++;
+    }
+    printf("\n");
+}
 
 
 int main(){
@@ -60,6 +68,7 @@ int main(){
 
     if (isFull(new))
         printf("Queue is full.\n");
+    display(new);
 
     printf("Dequeued element %d\n",dequeue(new));
     printf("Dequeued element %d\n",dequeue(new));   

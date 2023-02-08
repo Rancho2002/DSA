@@ -7,7 +7,7 @@ struct stack{
 };
 
 void display(struct stack *arr){
-    for(int i=0;i<arr->top+1;i++){
+    for(int i=arr->top;i!=-1;i--){
         printf("%d ",arr->arr[i]);
     }
 }
@@ -30,7 +30,7 @@ int isFull(struct stack *arr){
     }
 }
 int main(){
-    struct stack *new;
+    struct stack *new=(struct stack *)malloc(sizeof(struct stack));
     new->size=6;
     new->top=-1;
     new->arr=(int *)malloc(new->size*sizeof(int));
