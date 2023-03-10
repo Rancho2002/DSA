@@ -1,39 +1,67 @@
 #include <stdio.h>
 #include <stdlib.h>
-int top=-1;
-void push(int data,int size, char *stack){
-    if(top==size-1){
-        printf("Stack Overflow\n");
-    }
-    else{
-        top++;
-        stack[top]=data;
+struct stack{
+    int size;
+    int top;
+    int *arr;
+};
+
+void display(struct stack *arr){
+    for(int i=arr->top;i!=-1;i--){
+        printf("%d ",arr->arr[i]);
     }
 }
 
-void traverse(char *stack){
-    while(top!=-1){
-        printf("%d ",stack[top]);
-        top--;
+int isEmpty(struct stack *arr){
+    if(arr->top==-1){
+        return 1;
+    }
+    else{
+        return 0;
     }
 }
 
-void pop(char *stack){
-    if(top==-1){
-        printf("Stack Underflow\n");
+int isFull(struct stack *arr){
+    if(arr->top==arr->size-1){
+        return 1;
     }
     else{
-        top--;
+        return  0;
     }
 }
 int main(){
-    char stack[3];
-    push(1,sizeof(stack),stack);
-    push(3,sizeof(stack),stack);
-    push(5,sizeof(stack),stack);
-    push(6,sizeof(stack),stack);
-    traverse(stack);
-    pop(stack);
-    traverse(stack);
+    struct stack *new=(struct stack *)malloc(sizeof(struct stack));
+    new->size=6;
+    new->top=-1;
+    new->arr=(int *)malloc(new->size*sizeof(int));
+
+    new->arr[0]=72;
+    new->top++;
+    new->arr[1]=82;
+    new->top++;
+    
+    new->arr[2]=12;
+    new->top++;
+    new->arr[3]=12;
+    new->top++;
+    new->arr[4]=12;
+    new->top++;
+    new->arr[5]=12;
+    new->top++;
+
+    if(isEmpty(new)){
+        printf("Stack Empty\n");
+    }
+    else
+    printf("Stack not empty\n");
+
+    if(isFull(new)){
+        printf("Stack Full\n");
+    }
+    else{
+        printf("Stack not full\n");
+    }
+    
+    display(new);
     return 0;
 }

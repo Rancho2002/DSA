@@ -3,7 +3,8 @@
         "*html": "html",
         "stdio.h": "c",
         "*.tcc": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "ostream": "cpp"
     },
     "python.analysis.typeCheckingMode": "basic"
 }
