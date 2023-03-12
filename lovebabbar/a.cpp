@@ -14,5 +14,6 @@ int main(){
         n=n>>1;
     }
     cout<<val<<endl;
+    cout<<endl;
     return 0;     
 }
