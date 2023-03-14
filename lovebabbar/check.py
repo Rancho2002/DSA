@@ -1,0 +1,5 @@
+text = input()
+sen=text.split()
+# print(len(text)-len(sen)+1)
+# print(len(sen))
+print(round(((len(text)-len(sen)+1)/len(sen)),1))
