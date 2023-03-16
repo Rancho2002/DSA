@@ -1,7 +1,7 @@
 def binarySearch(arr,key):
     start=0
     end=len(arr)-1
-    mid=(start+end)//2
+    mid=(start+end)//2# ! to avoid integer overflow due to sum of two 10^7 terms, we can write it like this-> start + (end-start)//2
 
     while(start<=end):
         if(arr[mid]==key):
