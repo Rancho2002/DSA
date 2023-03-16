@@ -1,0 +1,3 @@
+vid 10: two pointer approach used to do many things in one iteration
+vid 11: calculate complexity practically using exactly worst case
+vid 12: binary search applied on monotonic function
