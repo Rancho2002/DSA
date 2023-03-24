@@ -14,6 +14,6 @@ def getPivot(arr,n):
     return s
 
 if __name__=='__main__':
-    arr=[8,10,17,1,3,4]
+    arr=[1,2,3,8,9,7]
     ans=getPivot(arr,len(arr))
     print(ans)
