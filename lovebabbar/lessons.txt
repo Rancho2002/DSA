@@ -6,3 +6,6 @@ vid 14:
 pivot element is the element where the array get breaks into two sorted subset but if joined then they become one sorted array. For example, 7 8 9 1 2 3 here pivot is arr[3] because if I join it, it become 1 2 3 7 8 9
 to search inside rotated sorted array you have to find the pivot index then break into two sequence . one is 0 to pivot-1 and another is pivot to n-1
 
+vid 15: (book allocation)
+1) take 0 to 100 no of pages and calculate mid 
+2) now start sum up, if sum>mid, do partition and start another sum, if it go equals to number of students then continue, if exceeds then 
