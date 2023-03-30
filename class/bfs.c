@@ -241,8 +241,9 @@ void bfs(graph *g) {
       temp = temp->next;
     }
     u->n->colr = Black;
-    printf("%d\n",u->n->data);
+    printf("%d ",u->n->data);
   }
+  printf("\n");
 }
 
 int main() {

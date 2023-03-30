@@ -6,7 +6,17 @@
         "istream": "cpp",
         "ostream": "cpp",
         "iostream": "cpp",
-        "heapSort.C": "cpp"
+        "heapSort.C": "cpp",
+        "queue": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "condition_variable": "c",
+        "algorithm": "c",
+        "limits": "c",
+        "mutex": "c",
+        "shared_mutex": "c",
+        "streambuf": "c",
+        "thread": "c"
     },
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black"
