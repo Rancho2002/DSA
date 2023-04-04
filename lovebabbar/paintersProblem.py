@@ -15,7 +15,7 @@ def isPossible(boards:list,m:int,k:int)->int:
     return True
 
 
-def findLargestMinDistance(boards:list, k:int):
+def findLargestMinDistance(boards:list, k:int)->int:
     # Write your code here
     # Return an integer
     s=0
