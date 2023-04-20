@@ -9,7 +9,7 @@ class Complex:
         self.real=self.real+c2.real
         self.img=self.img+c2.img
 
-    def multiply(self,c2):
+    def multiply(self,c2:"Complex"):
         # self.real=self.real*c2.real-self.img*c2.img
         # self.img=self.real*c2.img+self.img*c2.real #! this produce wrong output as self.real changed in 1st line
         newReal=self.real*c2.real-self.img*c2.img
