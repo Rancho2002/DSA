@@ -1,5 +1,5 @@
 class Complex:
-    def __init__(self,real,img):
+    def __init__(self,real=0,img=0):
         self.real=real
         self.img=img    
 
