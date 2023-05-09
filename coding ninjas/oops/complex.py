@@ -3,7 +3,7 @@ class Complex:
         self.real=real
         self.img=img    
 
-    def plus(self,c2):
+    def plus(self,c2:"Complex"):
         # c1.real+c2.real
         #c1.img+c2.img
         self.real=self.real+c2.real
