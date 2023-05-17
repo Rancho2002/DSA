@@ -5,11 +5,16 @@ class Item:
 		self.profit = profit
 		self.weight = weight
 
+
+def comparator(arr:Item):
+	return arr.profit/arr.weight
+
+
 # Main greedy function to solve problem
 def fractionalKnapsack(W, arr:list[Item]):
 
 	# Sorting Item on basis of ratio
-	arr.sort(key=lambda x: (x.profit/x.weight), reverse=True)
+	arr.sort(key=comparator, reverse=True)
 
 	# Result(value in Knapsack)
 	finalvalue = 0.0
