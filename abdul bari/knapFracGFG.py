@@ -15,6 +15,8 @@ def fractionalKnapsack(W, arr:list[Item]):
 
 	# Sorting Item on basis of ratio
 	arr.sort(key=comparator, reverse=True)
+	for i in arr:
+		print(i.weight,i.profit)
 
 	# Result(value in Knapsack)
 	finalvalue = 0.0
