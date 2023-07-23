@@ -41,9 +41,12 @@ if(n=="y" or n=="Y" or n=="p"):
             print(f"{tempOld} --> {newfile_name}")
         else:
             os.rename(oldname,newfile_name)
-            print("File renaming successful.\n")
+            
     print(f"\nNumber of hidden files are {hidden}. For safety purpose, they will be kept unchanged.")
 
 else:
     print("File renaming cancel.") 
     exit(0)
+
+if n=="y" or n=="Y":
+    print("\nFile renaming successful.")
