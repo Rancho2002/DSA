@@ -1,2 +1,2 @@
-fun=lambda x,y:x+y
-print(fun('aman','pro'))
+s=list(map(int,input("Enter stipen by space: ").split()))
+print(s)

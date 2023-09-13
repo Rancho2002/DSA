@@ -88,5 +88,7 @@ n.append(6)
 n.append(7)
 n.display()
 print(n.get(4))
-n.erase(7)
+# n.erase(3)
+
+n.erase(6)
 n.display()
